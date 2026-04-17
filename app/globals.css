@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wuxing-wood: #2e7d3e;
+  --color-wuxing-fire: #c73e3e;
+  --color-wuxing-earth: #c9a648;
+  --color-wuxing-metal: #9e9b8e;
+  --color-wuxing-water: #1a3a5c;
+
+  --font-family-serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+}
+
+body {
+  font-family: var(--font-family-serif);
+  background-color: #faf8f3;
+  color: #2c2416;
+}
+
+/* 和風グラデーション背景 */
+.bg-washi {
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(201, 166, 72, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(26, 58, 92, 0.06) 0%, transparent 60%);
+}

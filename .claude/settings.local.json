@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --eslint --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(cmd.exe /c \"node --version && npm --version && npx --version\")",
+      "Bash(cmd.exe /c \"where node\")",
+      "Bash(cmd.exe /c \"where npm\")",
+      "Read(//proc/**)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/nodejs:/c/Users/Owner/AppData/Roaming/npm\")",
+      "Bash(npm --version)",
+      "Read(//c/Users/Owner/AppData/Local/Programs//**)",
+      "Read(//c/nvm/**)",
+      "Read(//c//**)",
+      "Read(//usr/lib/**)",
+      "Bash(gh --version)",
+      "Bash(git --version)",
+      "Bash(curl --version)",
+      "Bash(powershell.exe -Command \"Get-Command node -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")",
+      "Bash(powershell.exe -Command \"[Net.ServicePointManager]::SecurityProtocol = 'Tls12'; Write-Host 'PowerShell OK'\")",
+      "Bash(powershell.exe -Command \"node --version\")",
+      "Bash(mkdir -p /c/Users/Owner/AppData/Local/node-portable)",
+      "Bash(curl -L -o \"/tmp/node.zip\" \"https://nodejs.org/dist/v22.14.0/node-v22.14.0-win-x64.zip\")",
+      "Bash(cd /tmp)",
+      "Bash(unzip -q node.zip)",
+      "Bash(mv /tmp/node-v22.14.0-win-x64 /c/Users/Owner/AppData/Local/node-portable)",
+      "Bash(export PATH=\"/c/Users/Owner/AppData/Local/node-portable:$PATH\")",
+      "Bash(export PATH=\"/c/Users/Owner/AppData/Local/node-portable/node-v22.14.0-win-x64:$PATH\")",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)"
+    ]
+  }
+}
